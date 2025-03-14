@@ -7,7 +7,7 @@ SENAI Cimatec
 
 ## Sobre o Projeto
 
-Site da Ford anunciando o carro Ford Ranger 2022
+Site da Ford anunciando o veiculo Ford Ranger 2022.
 
 
 ## Autores
