@@ -1,0 +1,748 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --azul-base:#1b357e;
+    --branco-secundario:#ffff;
+    --azul-strong: rgb(6, 6, 206);
+    --cinza-hover:#586981;
+    --cor-ficha: #f9f9f9;
+    --font-principal: "Roboto Condensed", serif;
+}
+
+header {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items:  center;
+    justify-content: space-between;
+    background-color: var(--branco-secundario);
+    font-family: var(--font-principal);
+}
+.logo img {
+    width: 10rem;
+} 
+
+.home_div{
+    background-color: var(--branco-secundario);
+    width: 38rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+}
+
+.home {
+    font-family: var(--font-principal);
+    text-decoration: none;
+    color: inherit;
+    color: var(--azul-base);
+    font-size: 1.7rem;
+}
+.home:hover {
+    text-decoration-line: overline;
+    color: var(--cinza-hover);
+}
+
+.invisivel {
+    background-color: var(--branco-secundario);
+    width: 12rem;
+    height: 1rem;
+    margin-right: 1%;
+}
+
+main iframe {
+    width: 100vw;
+    height: 27rem;
+}
+
+.layout {
+    width: 100vw;
+    background-color: var(--branco-secundario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.layout .carros {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+}
+.layout .carros .carro {
+    .colors {
+        width: 100%;
+        top: 10%;
+        right: -5%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 3%;
+        height: 40%;
+        gap: 5%;
+        label {
+            width: 1.1rem;
+            height: 1.1rem;
+            border: 1px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #red {
+            background-color: #9b3939;
+        }
+        #white {
+            background-color: #ffffff;
+        }
+        #black {
+            background-color: #000000;
+        }
+        #blue {
+            background-color: #1b357e;
+        }
+    }
+}
+
+.layout .carros .info {
+    font-family: var(--font-principal);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    button {
+        border: none;
+        background-color: var(--branco-secundario);
+    }
+}
+.layout .carros .carro {
+    position: relative;
+}
+.layout .carros .carro .info .text {
+    .valor {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .promo {
+        color: var(--cinza-hover);
+        font-size: 0.9rem;
+        text-decoration: line-through;
+    }
+    .nome {
+        font-size: 1.2rem;
+        color: var(--azul-base);
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .nome:hover {
+        color: var(--cinza-hover);
+    }
+}
+.layout .carros .info .info_img {
+    width: 1.5rem;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.layout .carros .info input {
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+.button_ficha {
+    button {
+        margin-top: 5%;
+        font-size: 0.8rem;
+        background-color: var(--branco-secundario);
+        border: solid 2px var(--azul-base);
+        color: var(--azul-base);
+        font-weight: bold;
+        font-family: var(--font-principal);
+        cursor: pointer;
+    }
+    button:hover {
+        background-color:#929cac;
+    }
+}
+.table {
+    margin: auto;
+    height: 50vh;
+    width: 50vw;
+    background-color: var(--cor-ficha);
+    font-family: var(--font-principal);
+    border: 2px solid rgba(0, 0, 0, 0.623);
+    
+    
+    table, th, td {
+        border: 1.5px solid rgb(78, 78, 78);
+        font-size: 1.2rem;
+        padding: 1%;
+        margin-top: 10%;
+
+    }
+    h1 {
+        padding-left: 2%;
+        padding-top: 5%;
+        font-size: 1.5rem;
+    }
+    p {
+        padding-left: 2%;
+        padding-top: 2%;
+        font-size: 1.1rem;
+        strong {
+            font-weight: bold;
+        }
+    }
+    button {
+        border: 0;
+        cursor: pointer;
+        background: var(--cor-ficha);
+        position: absolute;
+    }
+    img {
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+}
+
+.change-color-radio-button{
+    display: none;
+    width: 100px;
+}
+
+
+
+#xl20-white-radio:checked + img {
+    display: block;
+}
+
+#xl20-red-radio:checked + img {
+    display: block;
+}
+
+
+
+#xls-white-radio:checked + img {
+    display: block;
+}
+
+#xls-red-radio:checked + img {
+    display: block;
+}
+
+#xls-blue-radio:checked + img {
+    display: block;
+}
+#xls-black-radio:checked + img {
+    display: block;
+}
+
+
+
+#storm-white-radio:checked + img{
+    display: block;
+}
+
+#storm-red-radio:checked + img{
+    display: block;
+}
+
+#storm-blue-radio:checked + img{
+    display: block;
+}
+
+#storm-black-radio:checked + img{
+    display: block;
+}
+
+
+.carro-foto{
+    display: none;
+    width: 320px;
+    height: 184px;
+    object-fit: contain;
+}
+
+main .button {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    button {
+        width: 16rem;
+        height: 2.2rem;
+        font-size: 1.1rem;
+        background-color: var(--azul-base);
+        border-radius: 18px;
+        font-family: var(--font-principal);
+        color: var(--branco-secundario);
+        cursor: pointer;
+        transition-duration: 0.3s;
+        border: none;
+    }
+    button:hover {
+        background-color: var(--cinza-hover);
+        width: 17rem;
+        font-size: 1.2rem;
+        box-shadow: var(--cinza-hover) 0px 0px 8px;
+    }
+}
+
+footer {
+    background-color: var(--azul-base);
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redes {
+    color: var(--branco-secundario);
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+    p {
+        display: inline;
+        font-family: "Roboto Condensed", serif;
+        font-size: 1.2rem;
+    }
+    img {
+        width: 2.5rem;
+    }
+}
+.redes a :hover {
+    opacity: 0.5; /*almentar a transparencia da img */
+}
+.copyright {
+    margin-right: 2%;
+}
+
+@media (max-width: 1400px) {
+    header{
+        max-height: 3rem;
+    }
+    .home_div {
+        width: 29rem;
+    }
+    .home h1 {
+        font-size: 1.3rem;
+    }
+    .logo img {
+        width: 6rem;
+    } 
+    iframe {
+        max-height: 18rem;
+    }
+    .layout {
+        margin-top: 2%;
+        width: 100vw;
+    }
+    .layout .carros {
+        gap: 5rem;
+        img {
+            width: 14rem;
+        }
+        .info input {
+            width: 1.4rem;
+            height: 1.4rem;
+        }
+        .carro .info .text {
+            .valor {
+                font-size: 0.8rem;
+            }
+            .nome {
+                font-size: 1rem;
+            }
+            .promo {
+                font-size: 0.7rem;
+            }
+        }
+    }
+    .layout .carros .carro {
+        margin-left: 3%;
+    }
+    .table {
+        width: 70vw;
+        button {
+            width: 5%;
+            height: 5%;
+        }
+    }
+    main .button button {
+        width: 14rem;
+        font-size: 0.9rem;
+        height: 2rem;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    footer {
+        max-height: 3rem;
+    }
+    .redes {
+        img {
+            max-width: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    .copyright img {
+        max-width: 4rem;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    header{
+        max-height: 3rem;
+    }
+    .home_div {
+        width: 29rem;
+        margin-left: 8%;
+    }
+    .home h1 {
+        font-size: 1.5rem;
+    }
+    .logo img {
+        width: 6rem;
+    } 
+    iframe {
+        max-height: 18rem;
+    }
+    .layout .carros {
+        img {
+            width: 14rem;
+        }
+        .carro .carro .info .text {
+            .valor {
+                font-size: 0.9rem;
+            }
+            strong {
+                font-size: 1.2rem;
+            }
+            .promo {
+                font-size: 0.7rem;
+            }
+        }
+        .carro .info .text .promo {
+            font-size: 1rem;
+        }
+        .info input {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+    .layout .carros .carro {
+        margin-left: 3%;
+    }
+    .table {
+        width: 80vw;
+    }
+    main .button button {
+        max-width: 11rem;
+        max-height: 1.8rem;
+        font-size: 1rem;
+    }
+    .layout .carros .carro {
+        margin-left: 2rem;
+    }
+    footer {
+        max-height: 4rem;
+    }
+    .redes img {
+        max-width: 2rem;
+    }
+    .copyright img {
+        max-width: 4rem;
+    }
+    
+}
+@media (max-width: 920px) {
+    header{
+        max-height: 3rem;
+    }
+    .home_div {
+        width: 29rem;
+        margin-left: 8%;
+    }
+    .home h1 {
+        font-size: 1.5rem;
+    }
+    .logo img {
+        width: 6rem;
+    } 
+    iframe {
+        max-height: 25rem;
+    }
+    .layout .carros {
+        flex-direction: column;
+        padding-top: 5%;
+        img {
+            width: 18rem;
+        }
+        .info .text {
+            .valor {
+                font-size: 1.5rem;
+            }
+            strong {
+                font-size: 1.8rem;
+            }
+            .promo {
+                font-size: 1.3rem;
+            }
+        }
+        .info input {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+    main .button {
+        padding-top: 10%;
+        padding-bottom: 15%;
+        button {
+            max-width: 16rem;
+            max-height: 4rem;
+            font-size: 1.5rem;
+        }
+    }
+    footer {
+        height: 4rem;
+    }
+    .redes img {
+        max-width: 2rem;
+    }
+    .copyright img {
+        max-width: 4rem;
+    }
+}
+@media (max-width: 768px) {
+    header{
+        max-height: 3rem;
+    }
+    .home_div {
+        width: 29rem;
+        margin-left: 8%;
+    }
+    .home h1 {
+        font-size: 1rem;
+    }
+    .logo img {
+        width: 6rem;
+    } 
+    iframe {
+        max-height: 15rem;
+    }
+    .layout .carros {
+        padding-top: 5%;
+        gap: 5rem;
+        img {
+            width: 10rem;
+        }
+        .info .text {
+            .valor {
+                font-size: 0.6rem;
+            }
+            
+            strong {
+                font-size: 0.8rem;
+            }
+            .promo {
+                font-size: 0.5rem;
+            }
+        }
+        .info input {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+    .table {
+        width: 80vw;
+        p {
+            margin-bottom: 2%;
+        }
+    }
+    
+    main .button button {
+        max-width: 9rem;
+        max-height: 1.5rem;
+        font-size: 0.8rem;
+    }
+    footer {
+        max-height: 3rem;
+    }
+    .redes img {
+        max-width: 2rem;
+    }
+    .copyright img {
+        max-width: 4rem;
+    }
+}
+@media (max-width: 650px) {
+    header{
+        max-height: 3rem;
+    }
+    .home_div {
+        width: 29rem;
+        margin-left: 8%;
+    }
+    .home h1 {
+        font-size: 1rem;
+    }
+    .logo img {
+        width: 6rem;
+    } 
+    iframe {
+        max-height: 15rem;
+    }
+    .layout .carros {
+        flex-direction: column;
+        padding-top: 4%;
+        gap: 3rem;
+        img {
+            width: 12rem;
+        }
+        .info {
+            .text {
+                .valor {
+                    font-size: 0.8rem;
+                }
+                
+                strong {
+                    font-size: 1rem;
+                }
+                .promo {
+                    font-size: 0.6rem;
+                }
+            }
+            input {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            .info_img {
+                width: 1.5rem;
+            }
+        }
+    }
+    main .button {
+        padding-top: 5%;
+        padding-bottom: 15%;
+        button {
+            max-width: 12rem;
+            max-height: 2rem;
+            font-size: 1rem;
+        }
+    }
+    .table {
+        width: 80vw;
+    }
+    footer {
+        max-height: 3rem;
+    }
+    .redes img {
+        max-width: 2rem;
+    }
+    .copyright img {
+        max-width: 4rem;
+    }
+}
+@media (max-width: 375px) {
+    header{
+        max-height: 3rem;
+    }
+    .home_div {
+        width: 29rem;
+        margin-left: 8%;
+    }
+    .home h1 {
+        font-size: 1rem;
+    }
+    .logo img {
+        width: 6rem;
+    } 
+    .invisivel {
+        width: 4rem;
+    }
+    iframe {
+        max-height: 15rem;
+    }
+    .layout .carros {
+        flex-direction: column;
+        padding-top: 4%;
+        gap: 3rem;
+        img {
+            width: 12rem;
+        }
+        .carro .info {
+            .text {
+                .valor {
+                    font-size: 1rem;
+                }
+                
+                strong {
+                    font-size: 1rem;
+                }
+                .promo {
+                    font-size: 0.6rem;
+                }
+            }
+            input {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            .info_img {
+                width: 1.5rem;
+            }
+        }
+    }
+    .button_ficha {
+        button {
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color:#929cac;
+        }
+    }
+    .table {
+        width: 80vw;
+        
+        table, th, td {
+            margin-top: 20%;
+            font-size: 1rem;
+            padding: 1%;
+    
+        }
+        p {
+            padding-top: 8%;
+            font-size: 1rem;
+            
+        }
+        img {
+            max-width: 2rem;
+            max-height: 2rem;
+        }
+    }
+    main .button {
+        padding-top: 10%;
+        padding-bottom: 20%;
+        button {
+            max-width: 12rem;
+            max-height: 2rem;
+            font-size: 1rem;
+        }
+    }
+    footer {
+        max-height: 3rem;
+    }
+    .redes {
+        img {
+            max-width: 2rem;
+        }
+        p {
+            display: none;
+        }
+    }
+    .copyright img {
+        max-width: 4rem;
+    }
+}
